@@ -1,5 +1,9 @@
 Amplitude Angular Seed Project
 
+** MATERIAL DESIGN **
+
+[Angular Material] (https://material.angularjs.org/)
+
 - AngularJS - v1.4.8
 - http-server - 0.8.5
 - bower - 1.7.0
