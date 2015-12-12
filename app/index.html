@@ -22,7 +22,7 @@
 </head>
 <body ng-app="amplitudeApp" ng-cloak layout="row">
 	
-    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-sm')">
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
       <md-toolbar class="md-theme-indigo">
         <h1 class="md-toolbar-tools">Sidebar Menu</h1>
       </md-toolbar>
@@ -38,29 +38,36 @@
     </md-sidenav>
 
     <div layout="column" flex>
-    	<md-toolbar>
+    	<md-toolbar ng-controller="menuBarCtrl">
 	      <div class="md-toolbar-tools">
-	        <md-button class="md-icon-button" aria-label="Settings" hide-gt-sm>
+	        <md-button class="md-icon-button" aria-label="Settings" hide-gt-sm ng-click="toggleSidenav()">
 	        	<i class="material-icons">menu</i>
 	        </md-button>
 	        <h2>
 	          	<span>Toolbar with Icon Buttons</span>
 	        </h2>
 	        <span flex></span>
-	        <md-button class="md-icon-button" aria-label="Favorite">
-	        	<i class="material-icons">favorite</i>
-	        </md-button>
-	        <md-button class="md-icon-button" aria-label="More">
-	        	<i class="material-icons">more_vert</i>
-	        </md-button>
+	        <md-menu md-position-mode="target-right target" >
+		        <md-button class="md-icon-button" aria-label="More" ng-click="$mdOpenMenu($event)">
+		        	<i class="material-icons">account_circle</i>
+		        </md-button>
+		        <md-menu-content width="4" >
+		            <md-menu-item ng-repeat="item in [1, 2, 3]">
+		              <md-button ng-click="">
+		                  <div layout="row">
+		                    <p flex>Option {{item}}</p>
+		                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+		                  </div>
+		              </md-button>
+		            </md-menu-item>
+		        </md-menu-content>
+		    </md-menu>
 	      </div>
 	    </md-toolbar>
 
 		<md-content class="md-padding" ui-view flex></md-content>
 	</div>
 	
-
-
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
   	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
