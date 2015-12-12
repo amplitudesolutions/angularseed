@@ -14,14 +14,52 @@
 	<link rel="stylesheet" href="css/app.css">
 
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc7/angular-material.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 
 	<!-- JS -->
 	<script src="bower_components/angular/angular.js"></script>
 
 </head>
-<body ng-app="amplitudeApp" ng-cloak>
+<body ng-app="amplitudeApp" ng-cloak layout="row">
+	
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-sm')">
+      <md-toolbar class="md-theme-indigo">
+        <h1 class="md-toolbar-tools">Sidebar Menu</h1>
+      </md-toolbar>
+      <md-content layout-padding flex>
+        <md-button class="md-primary" hide-gt-md>
+          Close Sidenav Left
+        </md-button>
+        <p hide-md show-gt-md>
+          This sidenav is locked open on your device. To go back to the default behavior,
+          narrow your display.
+        </p>
+      </md-content>
+    </md-sidenav>
 
-	<div ui-view></div>
+    <div layout="column" flex>
+    	<md-toolbar>
+	      <div class="md-toolbar-tools">
+	        <md-button class="md-icon-button" aria-label="Settings" hide-gt-sm>
+	        	<i class="material-icons">menu</i>
+	        </md-button>
+	        <h2>
+	          	<span>Toolbar with Icon Buttons</span>
+	        </h2>
+	        <span flex></span>
+	        <md-button class="md-icon-button" aria-label="Favorite">
+	        	<i class="material-icons">favorite</i>
+	        </md-button>
+	        <md-button class="md-icon-button" aria-label="More">
+	        	<i class="material-icons">more_vert</i>
+	        </md-button>
+	      </div>
+	    </md-toolbar>
+
+		<md-content class="md-padding" ui-view flex></md-content>
+	</div>
+	
+
 
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
