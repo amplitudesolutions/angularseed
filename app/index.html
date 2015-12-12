@@ -23,18 +23,19 @@
 <body ng-app="amplitudeApp" ng-cloak layout="row">
 	
     <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
-      <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Sidebar Menu</h1>
-      </md-toolbar>
-      <md-content layout-padding flex>
-        <md-button class="md-primary" hide-gt-md>
-          Close Sidenav Left
-        </md-button>
-        <p hide-md show-gt-md>
-          This sidenav is locked open on your device. To go back to the default behavior,
-          narrow your display.
-        </p>
-      </md-content>
+      	<md-toolbar class="md-theme-indigo">
+        	<h1 class="md-toolbar-tools">Sidebar Menu</h1>
+      	</md-toolbar>
+      	<md-list>
+      		<md-subheader class="md-no-sticky">Favorites</md-subheader>
+      		<md-list-item ng-repeat="menu in ['Menu Item 1','Menu Item 2','Menu Item 3','Menu Item 4']">
+	      		<md-button>
+	      			<md-icon class="md-default-theme"><i class="material-icons">account_circle</i></md-icon>
+	      			<span class="md-inline-list-icon-label">{{menu}}</span>
+	      		</md-button>
+      		</md-list-item>
+      		<md-divider></md-divider>
+  		</md-list>
     </md-sidenav>
 
     <div layout="column" flex>
@@ -56,7 +57,7 @@
 		              <md-button ng-click="">
 		                  <div layout="row">
 		                    <p flex>Option {{item}}</p>
-		                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+		                    <i class="material-icons" style="margin: auto 3px auto 0;">portable_wifi_off</i>
 		                  </div>
 		              </md-button>
 		            </md-menu-item>
