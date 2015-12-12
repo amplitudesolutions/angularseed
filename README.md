@@ -5,3 +5,7 @@ Amplitude Angular Seed Project
 - bower - 1.7.0
 - shelljs - 0.5.3
 - LODash v3.10.1
+
+This project is meant to be the base for branchs off of this.
+
+Material and Bootstrap branches will be created.
