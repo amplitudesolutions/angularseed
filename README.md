@@ -3,6 +3,8 @@ Amplitude Angular Seed Project
 ** MATERIAL DESIGN **
 
 [Angular Material] (https://material.angularjs.org/)
+- version: 1.0.0-RC7
+
 
 - AngularJS - v1.4.8
 - http-server - 0.8.5
