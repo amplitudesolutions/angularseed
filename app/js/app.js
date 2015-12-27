@@ -3,6 +3,7 @@
 angular.module('amplitudeApp', [
 	'ui.router',
   	'ngAnimate',
+  	'ui.bootstrap',
   	'amplitudeApp.services',
   	'amplitudeApp.directives',
   	'amplitudeApp.controllers',

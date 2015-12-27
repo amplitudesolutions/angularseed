@@ -1,3 +1,5 @@
+*** Bootstrap ***
+
 Amplitude Angular Seed Project
 
 - AngularJS - v1.4.8
