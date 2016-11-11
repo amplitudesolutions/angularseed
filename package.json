@@ -1,8 +1,8 @@
 {
-  "name": "amplitude-angularseed",
+  "name": "amplitude-material-angularseed",
   "private": true,
   "version": "1.0.1",
-  "description": "Amplitude Solutions Angular Seed Project",
+  "description": "Amplitude Solutions Material Angular Seed Project",
   "repository": "https://github.com/amplitudesolutions/angularseed",
   "license": "MIT",
   "devDependencies": {
