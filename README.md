@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Amplitude Angular Seed Project
 
 ** MATERIAL DESIGN **
@@ -8,7 +7,6 @@ Amplitude Angular Seed Project
 
 =======
 Amplitude Angular Seed Project v1.0
->>>>>>> origin/master
 
 This project is meant to be the base for branchs off of this.
 
