@@ -1,12 +1,11 @@
 {
   "name": "amplitude-angularseed",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Amplitude Solutions Angular Seed Project",
   "repository": "https://github.com/amplitudesolutions/angularseed",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.9.0",
     "shelljs": "^0.7.5"
   },
   "scripts": {

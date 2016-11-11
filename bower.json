@@ -1,7 +1,7 @@
 {
-  "name": "angular seed",
-  "description": "angular seed",
-  "version": "1.0.0",
+  "name": "amplitude-angular-seed",
+  "description": "amplitude angular seed",
+  "version": "1.0.1",
   "homepage": "",
   "license": "MIT",
   "private": true,

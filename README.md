@@ -15,3 +15,6 @@ Updated all packages to the latest at the time
 Added:
 
 Functionality for using ENV variables - https://github.com/kudresov/angular-config-vars
+
+Removed:
+Didn't need http-server.
