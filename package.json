@@ -1,26 +1,24 @@
 {
-  "name": "angularseed",
+  "name": "amplitude-angularseed",
   "private": true,
-  "version": "0.0.0",
-  "description": "Angular Seed Project",
+  "version": "1.0.0",
+  "description": "Amplitude Solutions Angular Seed Project",
   "repository": "https://github.com/amplitudesolutions/angularseed",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.8.5",
-    "bower": "^1.7.0",
-    "shelljs": "^0.5.3"
+    "http-server": "^0.9.0",
+    "shelljs": "^0.7.5"
   },
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
-    "pretest": "npm install",
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update",
-    "preprotractor": "npm run update-webdriver",
-    "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
+    "start": "node server.js"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "bower": "~1.8.0",
+    "lodash": "^3.10.1",
+    "express": "~4.13.4",
+    "gulp": "~3.9.1",
+    "gulp-ng-config": "~1.3.1"
   }
 }
